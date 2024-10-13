@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
+
 import "./globals.css";
 
 const geistSans = localFont({
@@ -16,7 +17,7 @@ const geistMono = localFont({
 export const metadata: Metadata = {
   title: "Curpracode Technologies - Innovative Software Development Studio",
   description: "Curpracode Technologies specializes in delivering cutting-edge software solutions, tailored web and mobile applications, and digital innovations to help businesses grow and succeed. From concept to deployment, we provide expertise in a wide range of development services, ensuring top-quality, user-centric digital experiences.",
-  keywords: "Software Development, Web Development, Mobile Applications, Curpracode Technologies, Digital Solutions, IT Services, Custom Software, App Development",
+  keywords: "Software Development, Web Development, Mobile Applications, CurpraCode Technologies, Digital Solutions, IT Services, Custom Software, App Development, Digital marketing, Open Source, Digital Agency, IT consultancy, software service, software, Software development studio, Sales lead",
   authors: [{ name: "CurpraCode Technologies Ltd" }],
   // Open Graph Metadata
   openGraph: {
@@ -47,10 +48,7 @@ export const metadata: Metadata = {
       },
     ],
   },
-  // Additional metadata for SEO
-  viewport: "width=device-width, initial-scale=1.0",
-  robots: "index,follow",
-  // charset: "UTF-8", // Removed this line
+
 };
 
 
@@ -59,6 +57,7 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+
   return (
     <html lang="en">
       <body
