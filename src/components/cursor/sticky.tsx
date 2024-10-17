@@ -1,6 +1,6 @@
 'use client';
 import { useEffect, useState, useRef } from 'react';
-import styles from './style.module.css';
+import styles from '@/app/home.module.css';
 import { motion, useMotionValue, useSpring, transform, animate } from 'framer-motion';
 
 interface StickyProps {
@@ -125,7 +125,7 @@ const Sticky: React.FC<StickyProps> = ({ stickyElement }) => {
     }
 
     return (
-        <div className={styles.cursorContainer} style={{ position: 'absolute' }}>
+        <div className={styles.cursorContainer} style={{ position: 'absolute', zIndex: 1000 }}>
             <motion.div
                 transformTemplate={template}
                 style={{
@@ -133,7 +133,7 @@ const Sticky: React.FC<StickyProps> = ({ stickyElement }) => {
                     top: smoothMouse.y,
                     scaleX: scale.x,
                     scaleY: scale.y,
-                    backgroundColor: 'black', // Default color
+
                 }}
                 animate={{
                     width: cursorSize,
