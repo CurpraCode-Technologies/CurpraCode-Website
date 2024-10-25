@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     description: "Delivering innovative software solutions and digital services for businesses worldwide. Our expertise in custom development helps bring your ideas to life.",
     images: [
       {
-        url: "/curpracode-banner.jpg", // Replace with your actual image path
+        url: "/curpra-cover.png", // Replace with your actual image path
         width: 1200,
         height: 630,
         alt: "CurpraCode Technologies Banner Image",
