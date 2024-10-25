@@ -10,7 +10,7 @@ export default function Home() {
 
   return (
     <>
-      <div className={styles.gradientBackground}>
+      <div>
         <div ref={stickyElement}>
           <Sticky stickyElement={stickyElement} />
         </div>
