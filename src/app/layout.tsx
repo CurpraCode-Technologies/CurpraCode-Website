@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     description: "Delivering innovative software solutions and digital services for businesses worldwide. Our expertise in custom development helps bring your ideas to life.",
     images: [
       {
-        url: "/images/curpracode-banner.jpg", // Replace with your actual image path
+        url: "/curpracode-banner.jpg", // Replace with your actual image path
         width: 1200,
         height: 630,
         alt: "CurpraCode Technologies Banner Image",
@@ -43,7 +43,7 @@ export const metadata: Metadata = {
     description: "Expert software development and digital innovation services for businesses worldwide.",
     images: [
       {
-        url: "/images/curpracode-banner.jpg", // Same as the Open Graph image
+        url: "/curpra banner.png", // Same as the Open Graph image
         alt: "Curpracode Technologies Banner Image",
       },
     ],
