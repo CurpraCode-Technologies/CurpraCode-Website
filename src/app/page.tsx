@@ -11,7 +11,6 @@ export default function Home() {
   return (
     <>
       <div className={styles.gradientBackground}>
-        {/* <canvas data-v-73aec8c0="" data-engine="three.js r149" width="1548" height="1704" style={{ width: '774px', height: '852px' }}></canvas> */}
         <div ref={stickyElement}>
           <Sticky stickyElement={stickyElement} />
         </div>
@@ -44,8 +43,6 @@ export default function Home() {
               </svg>
             </div>
 
-
-            {/* Hero Content */}
             <div className="text-center px-5">
               <div className="mt-72">
                 <svg className={`w-full sm:w-auto ${styles.customShadow}`} width="576" height="421" viewBox="0 0 676 521" fill="none" xmlns="http://www.w3.org/2000/svg">
