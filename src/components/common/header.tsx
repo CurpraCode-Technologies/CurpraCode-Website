@@ -45,13 +45,15 @@ export const Header = forwardRef<HTMLDivElement, Props>(function index(
         target="_blank"
         rel="noopener noreferrer"
       >
-        <button className="relative flex items-center px-3 py-1 bg-white text-black rounded-full transition-all duration-300 hover:bg-gray-800 hover:text-white group">
+        <button className="relative flex items-center px-3 py-1 bg-white text-black rounded-full transition-all duration-300 hover:bg-[#2151A6] hover:text-white group">
           <span className="mr-2">
             <span className="inline-block text-2xl  transition-all duration-300 group-hover:opacity-0 group-hover:-translate-x-1">
               •
             </span>
           </span>
-          <span className="mr-2 text-sm">LET&apos;S TALK</span>
+          <span className={` ${styles.heading} mr-2 text-sm`}>
+            LET&apos;S TALK
+          </span>
           <span className="inline-block transition-all duration-300 opacity-0 group-hover:opacity-100 group-hover:translate-x-1">
             →
           </span>

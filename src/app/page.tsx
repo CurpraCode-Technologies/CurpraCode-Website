@@ -15,10 +15,8 @@ export default function Home() {
           <Sticky stickyElement={stickyElement} />
         </div>
         <Header />
-        <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen mt-72 p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-          {" "}
-          {/* Updated: Added mt-20 for margin-top */}
-          <div className="relative mt-56 content-center flex flex-col justify-center items-center">
+        <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen mt-44 p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
+          <div className="relative mt-44 content-center flex flex-col justify-center items-center">
             <div className="absolute left-2 sm:-left-10 lg:-left-52 top-2/3 sm:top-1/2 animate-bounce-slow flex flex-col items-start">
               <svg
                 fill="none"
@@ -978,12 +976,11 @@ export default function Home() {
                 </svg>
               </div>
               <h1
-                className={`text-3xl sm:text-5xl base:text-6xl font-bold mb-4 ${styles.blend}`}
+                className={` ${styles.heading} text-3xl sm:text-5xl base:text-6xl font-bold mb-4 ${styles.blend}`}
               >
-                Custom Software <br />
-                Solution
+                Custom Software Solution
               </h1>
-              <p className="text-black text-sm px-2 sm:px-0 sm:text-md max-w-lg mx-auto">
+              <p className="text-white text-sm px-2 sm:px-0 sm:text-md max-w-lg mx-auto">
                 Starting a business and going digital can be tough, but we
                 simplify it with seamless digital solutions that connect you to
                 your customers.
