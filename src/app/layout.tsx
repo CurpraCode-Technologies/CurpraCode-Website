@@ -4,14 +4,14 @@ import localFont from "next/font/local";
 
 import "./globals.css";
 
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
+const stacionRegular = localFont({
+  src: "./fonts/Stacion Regular.otf",
+  variable: "--font-stacion-regular",
   weight: "100 900",
 });
-const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
+const productSans = localFont({
+  src: "./fonts/ProductSans-Regular.ttf",
+  variable: "--font-product-sans",
   weight: "100 900",
 });
 
@@ -81,7 +81,7 @@ export default function RootLayout({
         </script>
       </Head>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${stacionRegular.variable} ${productSans.variable} antialiased`}
       >
         {children}
       </body>
