@@ -995,6 +995,23 @@ export default function Home() {
               </p>
             </div>
 
+            <div
+              className="trustpilot-widget"
+              data-locale="en-GB"
+              data-template-id="56278e9abfbbba0bdcd568bc"
+              data-businessunit-id="671e0d43aa219e3aa84a1c68"
+              data-style-height="52px"
+              data-style-width="100%"
+            >
+              <a
+                href="https://uk.trustpilot.com/review/curpracode.com"
+                target="_blank"
+                rel="noopener"
+              >
+                Trustpilot
+              </a>
+            </div>
+
             <div className={styles.scrollIndictator}>
               <a className={styles.scrollId} href=""></a>
             </div>
