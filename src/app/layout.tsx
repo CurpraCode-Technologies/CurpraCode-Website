@@ -112,6 +112,11 @@ export default function RootLayout({
             }
           `}
         </script>
+        <script
+          type="text/javascript"
+          src="//widget.trustpilot.com/bootstrap/v5/tp.widget.bootstrap.min.js"
+          async
+        ></script>
       </Head>
       <body
         className={`${stacionRegular.variable} ${productSans.variable} antialiased`}
