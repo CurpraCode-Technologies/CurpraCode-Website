@@ -10,7 +10,7 @@ export const Header = forwardRef<HTMLDivElement, Props>(function index(
   ref
 ) {
   return (
-    <div className="fixed top-0 left-0 right-0 flex justify-between items-center z-10 mx-10 py-10 text-black">
+    <div className="fixed top-0 left-0 right-0 flex justify-between items-center z-10 mx-10 py-0 lg:py-10 text-black">
       <a href="/" className="flex items-center space-x-2">
         <Image
           aria-hidden
@@ -25,7 +25,7 @@ export const Header = forwardRef<HTMLDivElement, Props>(function index(
       <div className="hidden lg:block w-96 bg-gray-400/80 p-1 px-1 rounded-full shadow-md">
         <ul className="flex text-sm justify-between items-center space-x-4">
           <li className="rounded-full  px-3 py-1 hover:bg-gray-200 transition-all">
-            <a href="">About</a>
+            <a href="/home">About</a>
           </li>
           <li className="rounded-full px-3 py-1 hover:bg-gray-200 transition-all">
             <a href="">Services</a>

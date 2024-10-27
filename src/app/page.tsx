@@ -976,7 +976,7 @@ export default function Home() {
                 </svg>
               </div>
               <h1
-                className={` ${styles.heading} text-3xl sm:text-5xl base:text-6xl font-bold mb-4 ${styles.blend}`}
+                className={` ${styles.heading} text-3xl sm:text-5xl md:text-6xl font-bold mb-4 ${styles.blend}`}
               >
                 Custom Software Solution
               </h1>
