@@ -118,6 +118,7 @@ export default function RootLayout({
           src="//widget.trustpilot.com/bootstrap/v5/tp.widget.bootstrap.min.js"
           async
         ></script>
+        <link rel="canonical" href="https://curpracode.com" />
       </Head>
       <body
         className={`${stacionRegular.variable} ${productSans.variable} antialiased`}
