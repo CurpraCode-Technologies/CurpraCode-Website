@@ -49,6 +49,7 @@ export const metadata: Metadata = {
       "Expert software development and digital innovation services for businesses worldwide.",
     images: "/curpra-cover.png",
   },
+  robots: "all",
 };
 
 export default function RootLayout({
