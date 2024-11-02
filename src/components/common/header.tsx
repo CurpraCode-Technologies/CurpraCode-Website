@@ -14,7 +14,7 @@ export const Header = forwardRef<HTMLDivElement, Props>(function index(
       <a href="/" className="flex items-center space-x-2">
         <Image
           aria-hidden
-          src={"/CurpraCode white.jpg"}
+          src={"/logo.png"}
           alt="icon"
           width={40}
           height={40}
