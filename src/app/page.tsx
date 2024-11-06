@@ -4,6 +4,11 @@ import styles from "./home.module.css";
 import { useRef } from "react";
 import { Sticky } from "@/components/cursor";
 import { Header } from "@/components/common/header";
+import Started from "@/components/home/started";
+import ServicesComponent from "@/components/home/services";
+import BoostComponent from "@/components/home/boost";
+import ToolComponent from "@/components/home/tool";
+import TestimonialCarousel from "@/components/home/testimonal";
 
 export default function Home() {
   const stickyElement = useRef<HTMLDivElement | null>(null);
@@ -1017,6 +1022,11 @@ export default function Home() {
             </div>
           </div>
         </div>
+        <Started />
+        <ServicesComponent />
+        <BoostComponent />
+        <ToolComponent />
+        <TestimonialCarousel />
       </div>
     </>
   );

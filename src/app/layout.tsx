@@ -20,7 +20,7 @@ export const metadata: Metadata = {
   description:
     "CurpraCode Technologies specializes in delivering cutting-edge software solutions, tailored web and mobile applications, and digital innovations to help businesses grow and succeed. From concept to deployment, we provide expertise in a wide range of development services, ensuring top-quality, user-centric digital experiences.",
   keywords:
-    "Software Development, Web Development, Mobile Applications, CurpraCode Technologies, Sunderland, London, Digital Solutions, IT Services, Custom Software, App Development, Digital marketing, Open Source, Digital Agency, IT consultancy, software service, software, Software development studio, Sales lead",
+    "Software Development, Web Development, Mobile Applications, CurpraCode Technologies, CurpraCode Technologies Ltd, Sunderland, London, Digital Solutions, IT Services, Custom Software, App Development, Digital marketing, Open Source, Digital Agency, IT consultancy, software service, software, Software development studio, Sales lead",
   authors: [{ name: "CurpraCode Technologies Ltd" }],
 
   openGraph: {
