@@ -1,19 +1,51 @@
 "use client";
 
 import styles from "./home.module.css";
-import { useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import { Sticky } from "@/components/cursor";
 import { Header } from "@/components/common/header";
+import Started from "@/components/home/started";
+import ServicesComponent from "@/components/home/services";
+import BoostComponent from "@/components/home/boost";
+// import ToolComponent from "@/components/home/tool";
+import TestimonialCarousel from "@/components/home/testimonal";
+import Book from "@/components/home/book";
+
+function isMobileDevice() {
+  return /Android|iPhone|iPad|iPod|Windows Phone|BlackBerry/i.test(
+    navigator.userAgent
+  );
+}
+
+// Utility function to check if the screen width matches a phone-sized device
+function isPhoneDevice() {
+  return window.matchMedia("(max-width: 640px)").matches && isMobileDevice();
+}
 
 export default function Home() {
+  const [isPhone, setIsPhone] = useState(false);
+
   const stickyElement = useRef<HTMLDivElement | null>(null);
+  useEffect(() => {
+    // Set the isPhone state based on the device check
+    setIsPhone(isPhoneDevice());
+
+    // Optional: Add event listener to recheck on resize (useful if user resizes the screen)
+    const handleResize = () => setIsPhone(isPhoneDevice());
+    window.addEventListener("resize", handleResize);
+
+    // Clean up the event listener on component unmount
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
   return (
     <>
       <div>
-        <div ref={stickyElement}>
-          <Sticky stickyElement={stickyElement} />
-        </div>
+        {!isPhone && (
+          <div ref={stickyElement}>
+            <Sticky stickyElement={stickyElement} />
+          </div>
+        )}
         <Header />
         <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen mt-44 p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
           <div className="relative mt-44 content-center flex flex-col justify-center items-center">
@@ -1017,6 +1049,12 @@ export default function Home() {
             </div>
           </div>
         </div>
+        <Started />
+        <ServicesComponent />
+        <BoostComponent />
+        {/* <ToolComponent /> */}
+        <TestimonialCarousel />
+        <Book />
       </div>
     </>
   );
