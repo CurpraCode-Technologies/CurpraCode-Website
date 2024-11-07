@@ -15,7 +15,6 @@ const BoostComponent = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Left Column - Cards */}
           <div className="space-y-6">
-            {/* Cashback Card */}
             <div className="bg-purple-200 p-6 rounded-lg text-gray-800">
               <p className="text-lg font-semibold">Total Cashback</p>
               <p className="text-3xl font-bold">£1,348</p>
@@ -36,77 +35,103 @@ const BoostComponent = () => {
             </div>
           </div>
 
-          {/* Center Column - Sales Progress Graph */}
-          <div className="bg-white rounded-lg p-6 text-gray-800 col-span-1 md:col-span-2">
+          <div className="bg-white rounded-lg p-6 my-6 text-gray-800 col-span-1 md:col-span-2">
             <h3 className="text-xl font-bold mb-4">Sales Progress</h3>
             {/* Replace with actual graph component */}
             <div className="h-56 flex items-center justify-center text-gray-500">
               <p>[Graph Placeholder]</p>
             </div>
           </div>
+        </div>
 
-          {/* Right Column - Cards */}
-          <div className="space-y-6">
-            {/* Another Cashback Card */}
-            <div className="bg-yellow-100 p-6 rounded-lg text-gray-800">
-              <p className="text-lg font-semibold">Total Cashback</p>
-              <p className="text-3xl font-bold">£5,097</p>
-              <p className="text-sm text-gray-500">5.4%</p>
-              <div className="mt-4 bg-gray-300 h-2 rounded-full">
-                <div className="bg-yellow-500 h-2 rounded-full w-2/3"></div>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-16 md:gap-52 bg-gray-900 text-white">
+          <div className="space-y-12">
+            <div className="flex items-start space-x-6">
+              <div className="w-12 h-12 flex-shrink-0">
+                <Image
+                  src="/svg/starcircle.svg"
+                  alt="custom-solution-icon"
+                  width={48}
+                  height={48}
+                />
+              </div>
+              <div>
+                <h3 className="text-2xl md:text-3xl font-bold">
+                  Custom Solutions for Every Business
+                </h3>
+                <p className="mt-3 text-gray-300">
+                  Our team delivers tailored software that meets the specific
+                  needs of your business, ensuring smooth operations and
+                  seamless growth. No more one-size-fits-all. Get software that
+                  works for you.
+                </p>
+              </div>
+            </div>
+            <div className="flex items-start space-x-6">
+              <div className="w-12 h-12 flex-shrink-0">
+                <Image
+                  src="/svg/resize.svg"
+                  alt="scalable-icon"
+                  width={48}
+                  height={48}
+                />
+              </div>
+              <div>
+                <h3 className="text-2xl md:text-3xl font-bold">
+                  Easy to Scale, Easy to Maintain
+                </h3>
+                <p className="mt-3 text-gray-300">
+                  We build scalable solutions that grow with your business.
+                  Whether you’re a startup or an enterprise, our software is
+                  designed to adapt and stay future-proof, ensuring minimal
+                  maintenance and maximum efficiency.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div className="space-y-12 ">
+            <div className="bg-[#FFE6B5] p-6 rounded-xl text-gray-800 ">
+              <p className="text-md text-gray-500 font-semibold">
+                Total Cashback
+              </p>
+              <p className="text-5xl font-bold">£5,097</p>
+              <p className="text-sm text-[#27CB4C] mb-2">5.4%</p>
+              <Image
+                src="/svg/cobinecirclewhite.svg"
+                alt="circle-image"
+                width={100}
+                height={100}
+              />
+              <div className="mt-4 bg-white h-2 rounded-full">
+                <div
+                  className="bg-black h-2 rounded-full"
+                  style={{ width: "60%" }}
+                ></div>
               </div>
             </div>
 
-            {/* Another Spend This Month Card */}
-            <div className="bg-green-100 p-6 rounded-lg text-gray-800">
-              <p className="text-lg font-semibold">£500</p>
-              <p className="text-sm text-gray-500">Spend this month</p>
-              <p className="text-sm text-green-600 font-semibold">15.4%</p>
-              <button className="mt-4 text-green-600 underline">
-                All spent summary
-              </button>
-            </div>
-          </div>
-        </div>
-
-        <div className="space-y-8 mt-12">
-          <div className="flex items-start space-x-4">
-            <div>
-              <Image
-                src="/svg/starcircle.svg"
-                alt="bus-image"
-                width={60}
-                height={60}
-              />
-              <h3 className="text-xl md:text-3xl font-bold">
-                Custom Solutions for Every Business
-              </h3>
-              <p className="mt-2">
-                Our team delivers tailored software that meets the specific
-                needs of your business, ensuring smooth operations and seamless
-                growth. No more one-size-fits-all. Get software that works for
-                you.
-              </p>
-            </div>
-          </div>
-
-          <div className="flex items-start space-x-4">
-            <div>
-              <Image
-                src="/svg/resize.svg"
-                alt="bus-image"
-                width={60}
-                height={60}
-              />
-              <h3 className="text-xl md:text-3xl font-bold">
-                Easy to Scale, Easy to Maintain
-              </h3>
-              <p className=" mt-2">
-                We build scalable solutions that grow with your business.
-                Whether you’re a startup or an enterprise, our software is
-                designed to adapt and stay future-proof, ensuring minimal
-                maintenance and maximum efficiency.
-              </p>
+            <div className="bg-[#B5FFDB] p-6 rounded-xl text-gray-800 ">
+              <p className="text-5xl font-bold">£500</p>
+              <div>
+                <p className="text-sm text-black mb-6">
+                  Spend this month{" "}
+                  <span className="bg-white rounded-full  p-1 text-xs text-black font-semibold mt-1">
+                    15.4%
+                  </span>
+                </p>
+              </div>
+              <div className="flex justify-between items-center px-6 py-2 mt-6 rounded-full border-2 border-black">
+                <button className="text-black font-bold">
+                  All spent summary
+                </button>
+                <Image
+                  src="/svg/chevron-arrow.svg"
+                  alt="circle-image"
+                  width={30}
+                  height={30}
+                />
+              </div>
             </div>
           </div>
         </div>
