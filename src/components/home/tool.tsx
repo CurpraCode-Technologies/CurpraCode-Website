@@ -1,14 +1,14 @@
 import React from "react";
+import styles from "../../app/home.module.css";
 
 const ToolComponent = () => {
   return (
     <div className="bg-gray-900 text-white py-16 px-8 space-y-8">
       {/* Title Section */}
-      <h2 className="text-4xl font-bold text-center mb-8">
+      <h2 className={`${styles.heading} text-4xl font-bold text-center mb-8`}>
         Industry Standard Tools and Technologies We Use
       </h2>
 
-      {/* Tools and Technologies Grid */}
       <div className="grid grid-cols-3 md:grid-cols-4 gap-6 justify-items-center">
         {/* Each Tool */}
         <div className="flex flex-col items-center space-y-2">

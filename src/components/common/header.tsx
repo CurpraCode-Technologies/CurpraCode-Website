@@ -10,16 +10,16 @@ export const Header = forwardRef<HTMLDivElement, Props>(function index(
   ref
 ) {
   return (
-    <div className="fixed top-0 left-0 right-0 flex justify-between items-center z-10 mx-10 py-0 lg:py-10 text-black">
+    <div className="fixed top-0 left-0 right-0 flex justify-between items-center z-50 mx-10 py-0 lg:py-10 text-black">
       <a href="/" className="flex items-center space-x-2">
         <Image
           aria-hidden
           src={"/logo.png"}
           alt="icon"
-          width={40}
-          height={40}
+          width={50}
+          height={50}
         />
-        <h3 className="text-white">CurpraCode</h3>
+        <h3 className={`${styles.heading} text-white text-lg`}>CurpraCode</h3>
       </a>
 
       <div className="hidden lg:block w-96 bg-gray-400/80 p-1 px-1 rounded-full shadow-md">
@@ -41,23 +41,25 @@ export const Header = forwardRef<HTMLDivElement, Props>(function index(
 
       <a
         className="hidden lg:block"
-        href="https://bit.ly/curpracode-booking"
+        href="https://bit.ly/curpracode-call"
         target="_blank"
         rel="noopener noreferrer"
       >
-        <button className="relative flex items-center px-3 py-1 bg-white text-black rounded-full transition-all duration-300 hover:bg-[#2151A6] hover:text-white group">
-          <span className="mr-2">
-            <span className="inline-block text-2xl  transition-all duration-300 group-hover:opacity-0 group-hover:-translate-x-1">
-              •
+        <StickyMag>
+          <button className="relative flex items-center px-3 py-1 bg-white text-black rounded-full transition-all duration-300 hover:bg-[#2151A6] hover:text-white group">
+            <span className="mr-2">
+              <span className="inline-block text-2xl  transition-all duration-300 group-hover:opacity-0 group-hover:-translate-x-1">
+                •
+              </span>
             </span>
-          </span>
-          <span className={` ${styles.heading} mr-2 text-sm`}>
-            LET&apos;S TALK
-          </span>
-          <span className="inline-block transition-all duration-300 opacity-0 group-hover:opacity-100 group-hover:translate-x-1">
-            →
-          </span>
-        </button>
+            <span className={` ${styles.heading} mr-2 text-sm`}>
+              LET&apos;S TALK
+            </span>
+            <span className="inline-block transition-all duration-300 opacity-0 group-hover:opacity-100 group-hover:translate-x-1">
+              →
+            </span>
+          </button>
+        </StickyMag>
       </a>
 
       <div className={`!block lg:!hidden  ${styles.header}`}>
