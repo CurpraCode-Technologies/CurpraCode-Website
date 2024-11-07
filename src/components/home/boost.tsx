@@ -15,31 +15,67 @@ const BoostComponent = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Left Column - Cards */}
           <div className="space-y-6">
-            <div className="bg-purple-200 p-6 rounded-lg text-gray-800">
-              <p className="text-lg font-semibold">Total Cashback</p>
-              <p className="text-3xl font-bold">£1,348</p>
-              <p className="text-sm text-gray-500">5.4%</p>
-              <div className="mt-4 bg-gray-300 h-2 rounded-full">
-                <div className="bg-purple-600 h-2 rounded-full w-1/2"></div>
+            <div className="space-y-12 ">
+              <div className="bg-white p-6 rounded-2xl text-gray-800 ">
+                <p className="text-md text-gray-500 font-semibold">
+                  Total Cashback
+                </p>
+                <p className="text-5xl font-bold">£5,097</p>
+                <p className="text-sm text-[#27CB4C] mb-2">5.4%</p>
+                <Image
+                  src="/svg/combinecircle.svg"
+                  alt="circle-image"
+                  width={100}
+                  height={100}
+                />
+                <div className="mt-4 bg-gray-200 h-2 rounded-full">
+                  <div
+                    className="bg-black h-2 rounded-full"
+                    style={{ width: "60%" }}
+                  ></div>
+                </div>
               </div>
-            </div>
 
-            {/* Spend This Month Card */}
-            <div className="bg-purple-100 p-6 rounded-lg text-gray-800">
-              <p className="text-lg font-semibold">£348</p>
-              <p className="text-sm text-gray-500">Spend this month</p>
-              <p className="text-sm text-purple-600 font-semibold">5.4%</p>
-              <button className="mt-4 text-purple-600 underline">
-                All spent summary
-              </button>
+              <div className="bg-[#E7C5F8] p-6 rounded-2xl text-gray-800 ">
+                <p className="text-5xl font-bold">£500</p>
+                <div>
+                  <p className="text-sm text-black mb-6">
+                    Spend this month{" "}
+                    <span className="bg-white rounded-full  p-1 text-xs text-black font-semibold mt-1">
+                      15.4%
+                    </span>
+                  </p>
+                </div>
+                <div className="flex justify-between items-center px-6 py-2 mt-6 rounded-full border-2 border-black">
+                  <button className="text-black font-bold">
+                    All spent summary
+                  </button>
+                  <Image
+                    src="/svg/chevron-arrow.svg"
+                    alt="circle-image"
+                    width={30}
+                    height={30}
+                  />
+                </div>
+              </div>
             </div>
           </div>
 
-          <div className="bg-white rounded-lg p-6 my-6 text-gray-800 col-span-1 md:col-span-2">
-            <h3 className="text-xl font-bold mb-4">Sales Progress</h3>
-            {/* Replace with actual graph component */}
-            <div className="h-56 flex items-center justify-center text-gray-500">
-              <p>[Graph Placeholder]</p>
+          <div className="bg-white rounded-2xl p-6 text-gray-800 col-span-1 md:col-span-2">
+            <h3 className="text-2xl font-bold mb-4">Sales Progress</h3>
+            <div>
+              <div> </div>
+            </div>
+            <div className="h-96 flex items-center justify-center text-gray-500">
+              <div>
+                <Image
+                  src="/svg/linechart.svg"
+                  alt="circle-image"
+                  width={600}
+                  height={430}
+                  className="rounded-lg object-contain"
+                />
+              </div>
             </div>
           </div>
         </div>
@@ -91,7 +127,7 @@ const BoostComponent = () => {
           </div>
 
           <div className="space-y-12 ">
-            <div className="bg-[#FFE6B5] p-6 rounded-xl text-gray-800 ">
+            <div className="bg-[#FFE6B5] p-6 rounded-2xl text-gray-800 ">
               <p className="text-md text-gray-500 font-semibold">
                 Total Cashback
               </p>
@@ -111,7 +147,7 @@ const BoostComponent = () => {
               </div>
             </div>
 
-            <div className="bg-[#B5FFDB] p-6 rounded-xl text-gray-800 ">
+            <div className="bg-[#B5FFDB] p-6 rounded-2xl text-gray-800 ">
               <p className="text-5xl font-bold">£500</p>
               <div>
                 <p className="text-sm text-black mb-6">
