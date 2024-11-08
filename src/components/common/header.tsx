@@ -10,7 +10,9 @@ export const Header = forwardRef<HTMLDivElement, Props>(function index(
   ref
 ) {
   return (
-    <div className="fixed top-0 left-0 right-0 flex justify-between items-center z-50 mx-10 py-0 lg:py-10 text-black">
+    <div
+      className={`${styles.headbg} fixed top-0 left-0 right-0 flex justify-between items-center z-50 px-10 py-0 lg:py-4 text-black`}
+    >
       <a href="/" className="flex items-center space-x-2">
         <Image
           aria-hidden
