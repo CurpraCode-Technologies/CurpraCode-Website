@@ -49,7 +49,7 @@ export default function Home() {
         <Header />
         <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen mt-44 p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
           <div className="relative mt-44 content-center flex flex-col justify-center items-center">
-            <div className="absolute left-2 sm:-left-10 lg:-left-52 top-2/3 sm:top-1/2 animate-bounce-slow flex flex-col items-start">
+            <div className="absolute -left-6 sm:-left-10 lg:-left-52 top-[650px] sm:top-1/2 animate-bounce-slow flex flex-col items-start">
               <svg
                 fill="none"
                 height="24"
@@ -67,7 +67,7 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="absolute right-2 sm:-right-10 lg:-right-52 top-2/3 sm:top-1/2 animate-bounce-r-slow flex flex-col-reverse items-end">
+            <div className="absolute -right-6 sm:-right-10 lg:-right-52 top-[650px] sm:top-1/2 animate-bounce-r-slow flex flex-col-reverse items-end">
               <div className="bg-yellow-200 text-black text-xs px-3 py-1 rounded-full shadow-lg mr-2">
                 <span>Software</span>
               </div>
@@ -86,7 +86,7 @@ export default function Home() {
               </svg>
             </div>
 
-            <div className="text-center px-5">
+            <div className="text-center -px-4 md:px-5">
               <div className="mt-72">
                 <svg
                   className={`w-full sm:w-auto ${styles.customShadow}`}

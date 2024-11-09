@@ -5,7 +5,7 @@ import Image from "next/image";
 const BoostComponent = () => {
   return (
     <div className="my-20">
-      <div className="bg-gray-900 text-white py-16 px-8 space-y-8">
+      <div className="bg-gray-900 text-white py-16 px-5 md:px-10 space-y-8">
         <h1
           className={`${styles.heading} text-3xl md:text-4xl lg:text-6xl font-bold text-center mb-12`}
         >

@@ -19,7 +19,7 @@ const BookComponent = () => {
           rel="noopener noreferrer"
         >
           <StickyMag>
-            <button className="bg-blue-800 rounded-full text-white text-lg font-semibold py-3 px-6 hover:bg-blue-700 transition-colors">
+            <button className="bg-black rounded-full text-white text-lg font-semibold py-3 px-6 hover:bg-gray-800 transition-colors">
               Start Your Free Consultation
             </button>
           </StickyMag>
