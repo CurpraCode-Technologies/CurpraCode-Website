@@ -11,17 +11,20 @@ export const Header = forwardRef<HTMLDivElement, Props>(function index(
 ) {
   return (
     <div
-      className={`${styles.headbg} fixed top-0 left-0 right-0 flex justify-between items-center z-50 px-10 py-0 lg:py-4 text-black`}
+      className={`${styles.headbg} fixed top-0 left-0 right-0 flex justify-between items-center z-50 px-5 md:px-10 py-0 lg:py-4 text-black`}
     >
-      <a href="/" className="flex items-center space-x-2">
+      <a href="/" className="flex items-center space-x-1">
         <Image
           aria-hidden
           src={"/logo.png"}
           alt="icon"
           width={50}
           height={50}
+          className="w-8 lg:w-10"
         />
-        <h3 className={`${styles.heading} text-white text-lg`}>CurpraCode</h3>
+        <h3 className={`${styles.heading} text-white text-sm lg:text-lg`}>
+          CurpraCode
+        </h3>
       </a>
 
       <div className="hidden lg:block w-96 bg-gray-400/80 p-1 px-1 rounded-full shadow-md">

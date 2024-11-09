@@ -6,7 +6,7 @@ import { StickyMag } from "../cursor";
 const Started = () => {
   return (
     <div className="my-10 md:my-20">
-      <div className="flex flex-col-reverse md:flex-row items-center bg-gray-100 mx-4 md:mx-10 p-6 md:p-8 rounded-2xl">
+      <div className="flex flex-col-reverse md:flex-row items-center bg-gray-100 mx-4 md:mx-10 p-5 md:p-8 rounded-2xl">
         <div className="w-full md:w-1/2 mt-6 md:mt-0 flex justify-center md:justify-start">
           <Image
             src="/svg/startchart.svg"

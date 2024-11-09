@@ -5,7 +5,7 @@ import Image from "next/image";
 const ServicesComponent = () => {
   return (
     <div className="my-20">
-      <div className="relative bg-gray-900 text-white mt-20 py-16 px-8 overflow-hidden">
+      <div className="relative bg-gray-900 text-white mt-20 py-16 px-3 md:px-10 overflow-hidden">
         <div
           className={`absolute top-72 inset-0 text-9xl font-bold text-gray-300 opacity-10 whitespace-nowrap ${styles.animateScroll}`}
         >
