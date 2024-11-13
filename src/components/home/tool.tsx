@@ -146,7 +146,7 @@ const ToolComponent = () => {
             >
               <item.icon color={item.color} size={item.size} />
             </div>
-            <p>{item.label}</p>
+            <p className="text-xs md:text-sm">{item.label}</p>
           </div>
         ))}
       </div>
@@ -186,7 +186,7 @@ const ToolComponent = () => {
 
         <div className="flex flex-col items-center justify-center border-2 h-24 rounded-full bg-[#2151A6] text-white px-8 py-8 md:px-16 md:py-10">
           <h2 className="text-4xl font-bold">22</h2>
-          <p className="text-md text-center">
+          <p className="text-xs md:text-md text-center">
             Technology stacks we leverage for creating <br /> your digital
             solutions
           </p>
@@ -212,14 +212,14 @@ const ToolComponent = () => {
       <div className="flex flex-wrap items-center justify-end space-y-4 md:space-y-o space-x-2 bg-gray-900 p-4">
         <div className="flex flex-col items-center border-2  justify-center h-24 rounded-full bg-[#2151A6] text-white px-16 py-10">
           <h2 className="text-3xl font-bold">110+</h2>
-          <p className="text-sm text-center">
+          <p className="text-xs md:text-sm text-center">
             Managed and mantained codebase <br /> for digital product
           </p>
         </div>
 
         <div className="flex flex-col items-center justify-center border-2  h-24 rounded-full bg-[#2151A6] text-white px-16 py-10">
           <h2 className="text-3xl font-bold">100%</h2>
-          <p className="text-sm text-center">
+          <p className="text-xs md:text-sm text-center">
             Expertise across all boards and <br /> use of digital tools.
           </p>
         </div>
