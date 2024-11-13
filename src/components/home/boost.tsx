@@ -7,13 +7,12 @@ const BoostComponent = () => {
     <div className="my-20">
       <div className="bg-gray-900 text-white py-16 px-5 md:px-10 space-y-8">
         <h1
-          className={`${styles.heading} text-3xl md:text-4xl lg:text-6xl font-bold text-center mb-12`}
+          className={`${styles.heading} lg:mx-80 text-3xl md:text-4xl lg:text-6xl font-bold text-center mb-12`}
         >
           Boost Your Business with Cutting-Edge Software Solutions
         </h1>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {/* Left Column - Cards */}
           <div className="space-y-6">
             <div className="space-y-12 ">
               <div className="bg-white p-6 rounded-2xl text-gray-800 ">
@@ -151,7 +150,7 @@ const BoostComponent = () => {
               <p className="text-5xl font-bold">£500</p>
               <div>
                 <p className="text-sm text-black mb-6">
-                  Spend this month{" "}
+                  Spend this month
                   <span className="bg-white rounded-full  p-1 text-xs text-black font-semibold mt-1">
                     15.4%
                   </span>
