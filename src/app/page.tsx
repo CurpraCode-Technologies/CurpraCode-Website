@@ -7,7 +7,7 @@ import { Header } from "@/components/common/header";
 import Started from "@/components/home/started";
 import ServicesComponent from "@/components/home/services";
 import BoostComponent from "@/components/home/boost";
-// import ToolComponent from "@/components/home/tool";
+import ToolComponent from "@/components/home/tool";
 import TestimonialCarousel from "@/components/home/testimonal";
 import Book from "@/components/home/book";
 
@@ -1052,7 +1052,7 @@ export default function Home() {
         <Started />
         <ServicesComponent />
         <BoostComponent />
-        {/* <ToolComponent /> */}
+        <ToolComponent />
         <TestimonialCarousel />
         <Book />
       </div>
