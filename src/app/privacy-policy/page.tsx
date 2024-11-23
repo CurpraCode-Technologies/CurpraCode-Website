@@ -7,7 +7,7 @@ const PrivacyPolicy = () => {
   return (
     <div>
       <Header />
-      <div className="container mx-auto py-16 px-4 md:px-8">
+      <div className="container mt-14 md:mt-8 mx-auto py-16 px-4 md:px-8">
         <h1 className="text-3xl font-bold text-center mb-8">Privacy Policy</h1>
         <p className="text-gray-400 text-center mb-4">
           Effective Date: 14th October, 2024
