@@ -162,7 +162,7 @@ const PrivacyPolicy = () => {
             us:
           </p>
           <address className="not-italic mt-4">
-            <p>CurpraCode Technologies:</p>
+            <p>CurpraCode Technologies Ltd:</p>
             <p>38, Norfolk Street, Sunderland, UK</p>
             <p>
               Email:{" "}
