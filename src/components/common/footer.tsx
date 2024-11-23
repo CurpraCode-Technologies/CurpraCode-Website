@@ -28,7 +28,7 @@ const Footer = () => {
           </p>
         </div>
         <div className="mt-4">
-          <p>&copy; {new Date().getFullYear()} CurpraCode</p>
+          <p>&copy; {new Date().getFullYear()} CurpraCode Ltd.</p>
         </div>
       </div>
     </div>
