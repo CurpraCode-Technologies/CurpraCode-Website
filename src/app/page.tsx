@@ -10,6 +10,7 @@ import BoostComponent from "@/components/home/boost";
 import ToolComponent from "@/components/home/tool";
 import TestimonialCarousel from "@/components/home/testimonal";
 import Book from "@/components/home/book";
+import Footer from "@/components/common/footer";
 
 function isMobileDevice() {
   return /Android|iPhone|iPad|iPod|Windows Phone|BlackBerry/i.test(
@@ -1055,6 +1056,7 @@ export default function Home() {
         <ToolComponent />
         <TestimonialCarousel />
         <Book />
+        <Footer/>
       </div>
     </>
   );
