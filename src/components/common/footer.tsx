@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import styles from "@/app/home.module.css";
+import { FaXTwitter, FaLinkedin, FaInstagram } from "react-icons/fa6";
 
 const Footer = () => {
   return (
@@ -18,13 +19,46 @@ const Footer = () => {
           CurpraCode
         </h3>
       </a>
+
+      {/* Social Media Links */}
+      <div className="flex space-x-6 mt-6">
+        <a
+          href="https://x.com/curpracode_hq"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-white text-2xl hover:scale-110 hover:rotate-6 transition-transform duration-300"
+        >
+          <FaXTwitter />
+        </a>
+        <a
+          href="https://linkedin.com/company/curpracode-technologies/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-white text-2xl hover:scale-110 hover:rotate-6 transition-transform duration-300"
+        >
+          <FaLinkedin />
+        </a>
+        <a
+          href="https://www.instagram.com/curpracode_tech/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-white text-2xl hover:scale-110 hover:rotate-6 transition-transform duration-300"
+        >
+          <FaInstagram />
+        </a>
+      </div>
+
       <div className="text-center mt-4">
         <div className="flex flex-row text-md space-x-4">
           <p>
-            <a href="/privacy-policy">Privacy Policy</a>
+            <a href="/privacy-policy" className="hover:underline">
+              Privacy Policy
+            </a>
           </p>
           <p>
-            <a href="mailto:hello@curpracode.com">hello@curpracode.com</a>
+            <a href="mailto:hello@curpracode.com" className="hover:underline">
+              hello@curpracode.com
+            </a>
           </p>
         </div>
         <div className="mt-4">
